@@ -33,10 +33,6 @@ The theme of the website is TFT (Teamfight Tactics).
 - **images/:** Directory for storing images used in the website.
 - **README.md:** This file, providing an overview of the project.
 
-## GitHub Repository
-
-[ITEW4-Midterm-Exercise-1](https://github.com/AceSumaoy/ITEW4-Midterm-Exercise-1)
-
 ## Project Members
 
 - John Kerwin Caballes

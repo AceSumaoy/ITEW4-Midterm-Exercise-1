@@ -40,18 +40,25 @@ img {
 
 nav ul {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
-  display: inline;
+  font-family: "Arial";
 }
 
 nav a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 1em;
   color: white;
   text-decoration: none;
   padding-right: 2em;
+}
+
+nav a img:first-child {
+  width: 100%;
 }
 
 .main-nav {
@@ -60,6 +67,7 @@ nav a {
   align-items: center;
   font-weight: lighter;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.1rem;
 }
 
 main {
@@ -138,6 +146,7 @@ footer {
   bottom: 0;
   background-color: rgb(19, 16, 16);
   padding: 0 0 2em;
+  margin-top: 2.5em;
 }
 
 footer ul {
