@@ -11,6 +11,12 @@
     position: relative;
  }
 
+ footer {
+    height: 20%;
+    width: 100vw;
+
+ }
+
  /* combinator */
  .input-container, .main-section-container, .sign-transactions{
     display: flex;
@@ -19,12 +25,13 @@
     align-items: center;
 }
 
-.facebook, .instagram, .twitter {
-    margin-bottom: 20px;
+.facebooks, .instagrams, .twitters, .googles, .xbox {
+    margin: 1.5rem;
+    padding: calc(1rem + 1.5px);
 }
 
 #username, #password {
-    width: 70%;
+    max-width: 70%;
     font-size: 1.5rem;
     margin: 15px;
     border: none;
@@ -60,7 +67,7 @@
  .sign-transactions > .another-transaction {
     font-size: 0.7em;
     color: gray;
-    margin: 5px;
+    margin:5px;
  }
 
 
@@ -93,8 +100,8 @@
 }
 
 .form-container{
-    width: 32.25rem;
-    height: 37.5rem;
+    min-width: 45%;
+    min-height: 95%;
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
@@ -141,6 +148,7 @@ input[type='checkbox'] {
  .another-transaction {
     color: lightgray;
     text-decoration: none;
+    margin-bottom: 2.5rem;
  }
 
  input:focus {
@@ -178,7 +186,7 @@ input[type='checkbox'] {
 
 .signup-form {
     min-width: 30%;
-    height: 92.30vh;
+    height: 100%;
     background-color: white;
 }
 
@@ -210,6 +218,16 @@ h1 {
 }
 
 
+@media screen and (max-width: 385px ){
+    .gender-container, .input-date{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
 
 /* 800 width */
 @media screen and (max-width: 799px){
@@ -222,7 +240,8 @@ h1 {
     }
 
     .signup-form{
-        width: 500px;
+        width: 100%;
+        height: 100%;
     }
 
     .information-container {
@@ -230,7 +249,47 @@ h1 {
         justify-content: center;
         align-items: center;
     }
+
+    .nav-container {
+        position: static;
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    #username {
+        margin-top: 7rem;
+    }
+
+    .facebooks, .instagrams, .twitters, .googles, .xbox {
+        padding: 0.5rem;
+    }
+
+
+
 }
+
+
+
+@media screen and (min-width: 900px ) {
+    .form-container {
+        width: 35%;
+        height: 80%;
+    }
+}
+
 
 
 /* 1000px width */
@@ -255,6 +314,6 @@ h1 {
 
     .signup-form {
         width: 50%;
-        height: 45%;
+        height: 100%;
     }
 }
