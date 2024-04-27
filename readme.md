@@ -31,6 +31,7 @@ The theme of the website is TFT (Teamfight Tactics).
 - **sign-up.html:** Sign Up page.
 - **css/:** Directory containing CSS stylesheets.
 - **images/:** Directory for storing images used in the website.
+- **videos/:** Directory for storing videos used in the website.
 - **README.md:** This file, providing an overview of the project.
 
 ## Project Members
